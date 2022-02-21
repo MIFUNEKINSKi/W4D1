@@ -30,7 +30,7 @@ describe TicTacToeNode do
       end).to eq(true)
     end
 
-    it "all their #prev_mov_pos values are their parents'" do
+    it "all their #prev_move_pos values are their parents'" do
       child_prev_moves = empty_board_node.children.map(&:prev_move_pos)
       positions = [0, 1, 2].product([0, 1, 2])
       expect(child_prev_moves).to match_array(positions)
