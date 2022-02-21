@@ -80,8 +80,8 @@ class Board
     !winner.nil?
   end
 end
-
 # Notice how the Board has the basic rules of the game, but no logic
+
 # for actually prompting the user for moves. This is a rigorous
 # decomposition of the "game state" into its own pure object
 # unconcerned with how moves are processed.
